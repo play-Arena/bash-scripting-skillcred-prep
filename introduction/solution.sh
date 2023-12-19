@@ -1,13 +1,17 @@
 #! /bin/bash
 
-LOG_FILE= /var/log/messages
+TXT_FILE_NAME="./textcontent"
+FILE_EXTENSION=".txt"
 
-echo $LOG_FILE
-echo "Backing up log messages to $LOG_FILE.old"
-cp $LOG_FILE $LOG_FILE.old
+SOURCE_FILE_NAME=$TXT_FILE_NAME$FILE_EXTENSION
+TARGET_FILE_NAME=$TXT_FILE_NAME.old$FILE_EXTENSION
 
-echo "Clearing log file $LOG_FILE"
-cat /dev/null > $LOG_FILE
+echo $SOURCE_FILE_NAME
+echo "Backing up text content to $TARGET_FILE_NAME"
+cp $SOURCE_FILE_NAME $TARGET_FILE_NAME
 
-exho "The log file $LOG_FILE has been cleaned up"
+echo "Clearing text file $SOURCE_FILE_NAME"
+cat /dev/null > $SOURCE_FILE_NAME
+
+echo "The text file $SOURCE_FILE_NAME has been cleaned up"
 exit 0

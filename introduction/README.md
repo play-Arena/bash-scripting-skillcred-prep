@@ -1,5 +1,5 @@
 ## Excercise 1
-Create a script that copies the contents of the log file from /var/log/messages to var/log/messages.old and deletes the contents of var/log/messages
+Create a script that copies the contents of the file textcontent.txt to textcontent.old.txt and deletes the contents of of the original file
 
 ## Solution
 Available in the `solution.sh` file, in this directory.
