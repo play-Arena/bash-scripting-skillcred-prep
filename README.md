@@ -7,4 +7,5 @@ Each directory contains a Readme file with a problem statement and key Bash conc
 
 ### Index
 1. [Introduction](./introduction/)
-2. To be added
+2. [Read User Input & Store It In a Variable](./variable_exports/)
+3. TBD
